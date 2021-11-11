@@ -1,0 +1,814 @@
+* {padding:0; margin:0}
+.container{
+    width: 100%; margin: auto;
+    max-width: 100%; 
+}
+/*bagian Header-menu*/
+header{
+    height: 125px; background-color:#05c46b;
+    overflow: hidden;
+}
+header .kiri{
+    background-color:black; position: absolute;
+     margin-left: 80px;
+}
+header .kiri img{
+    width: 100px; height: 100px;
+    margin: 12px 0 15px 0px; float: left;
+}
+header .kanan {
+    font-size: 20px; color: black; 
+    float: left; margin: 35px 10px 15px 190px;
+    padding: 4px; 
+}
+header .kanan h2{
+    text-align: center; margin-top: 5px;
+}
+.down:after{
+    content: '\f0dd'; font-family: "FontAwesome";
+    transform: translate(-50%); font-size:20px; 
+    margin: 5px; color: black;
+    
+}
+.right:after{
+    content: '\f0da'; font-family: "FontAwesome";
+    transform: translate(-50%); font-size:20px; 
+    margin: 5px; color: black;
+    
+}
+menu{
+    float: right; margin-top: -125px; margin-right: 0px;
+    height: 125px;  margin-bottom: 3px; 
+    position: sticky; top:0px; z-index: 1;
+}
+menu ul li{
+    text-decoration: none; color:whitesmoke;
+    padding:0 45px; list-style: none; float:left;
+    line-height: 125px; font-size: 20px;
+}
+menu ul li a{
+    text-decoration:none; color:white;  
+}
+menu ul li ul {
+    display: none;  color: #1e272e; 
+}
+nav ul li:hover > ul{
+    display: block; 
+    margin-left:-35.5px; 
+    color:whitesmoke; 
+}
+nav{
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+}
+nav ul li ul{
+    position:absolute; 
+}
+nav ul li ul li {
+    float: none;  background:#05c46b; color: teal;
+    margin-left:-10px; line-height:90px; 
+}
+nav ul li ul li:hover  {
+    
+    position: relative; background: green;
+}
+nav ul li ul:hover a {
+    color: black; 
+}
+nav ul li ul li a:hover{
+    color:black; 
+}
+nav ul ul ul{
+    left:187px; top:0px; 
+}
+menu li:hover{
+    color:teal;
+}
+menu li:hover a{
+    text-decoration: none; color:black; 
+    
+}
+menu li a:hover{
+   font-size: 19px;
+}
+menu ul li:hover ul li a{
+    color: white;
+}
+
+/*bagian gambar full di menu*/
+.imgfull img{
+    width: 100%; height: 600px; margin-top: -3px;
+    position:relative; filter: brightness(30%); 
+}
+.isi{
+    color: bisque; position: absolute; 
+    padding: 40px; font-size: 40px; width: 700px; margin-left: 12px;
+    text-align: center; margin-top: -360px; 
+}
+.isi a{
+    display: block; background: #05c46b; margin-top: 15px;
+    cursor: pointer; width:150px; padding: 15px; margin-left: 110px;
+}
+.isi p{
+    margin-right: 150px; padding: 20px; font-size: 25px;
+}
+.isi a:hover {
+    background: wheat; color: #05c46b; 
+    color:#05c46b; background: transparent;
+    transition: background 1s ease-in-out; 
+    border: 3px solid green;
+}
+.ornamen{
+    margin-top:-100px; margin-left:-25px;
+}
+.garis{
+    background: white; width: 80px; position:absolute;
+    height: 10px; margin-top:-350px; margin-left: 160px;
+}
+
+/*Bagian Form di Menu*/
+.f1{
+    border-right: px solid #218c74; background:white;
+    line-height: 60px; width: 757px; margin-top:30px;
+    position: absolute; margin-left: 270px; 
+    padding-left: 15px; 
+    border-bottom: 5px solid green ;
+}
+.f1 input{
+    padding:15px; width: 170px; 
+    line-height: 10px; text-align: left;
+    border: 0px; border-right: 0.5px solid #218c74;
+    
+}
+.f1 select, option{
+    padding-left: 15px;  width: 170px;
+    line-height: 70px; text-align: left; border: 0px;
+}
+.f1 button{
+    padding:10px; width: 170px; margin-top: 2px; 
+    line-height: 33px; text-align: center;
+    border: 0px; background: #05c46b; 
+    line-height: 20px;
+}
+button[type=button]:hover{
+    color:green; background: transparent;
+    transition: background 1s ease-in-out; 
+    border: 3px solid green;
+}
+
+/*Bagian Top Chart*/
+.allpagination{
+    background: #33d9b2; height: 790px; 
+    margin-top: -175px; position:relative; 
+}
+.in{
+    display: inline; overflow: hidden; position: relative;
+    bottom: 160px;
+}
+
+.subjek1{
+    position: relative; top: 350px; left: 60px; z-index: 1;
+}
+.subjek1 h3,p{
+    color: aliceblue;
+}
+.subjek1 button{
+    position: relative; left: 135px;
+    padding: 10px; border-radius: 5px;
+    line-height: 13px; width: 35px; bottom:20px;
+    border: none;
+}
+
+.subjek2{
+    position: relative; top: 280px; z-index: 1; left: 310px; 
+}
+.subjek2 h3,p{
+    color: aliceblue;
+}
+.subjek2 button{
+    position: relative; left: 135px;
+    padding: 10px; border-radius: 5px;
+    line-height: 13px; width: 35px; bottom:20px;
+    border: none;
+}
+
+
+.subjek3{
+    position: relative; top: 210px; z-index: 1; left: 560px; 
+}
+.subjek3 h3,p{
+    color: aliceblue;
+}
+.subjek3 button{
+    position: relative; left: 135px;
+    padding: 10px; border-radius: 5px;
+    line-height: 13px; width: 35px; bottom:20px;
+    border: none;
+}
+
+.subjek4{
+    position: relative; top: 140px; z-index: 1; left: 810px; 
+}
+.subjek4 h3,p{
+    color: aliceblue;
+}
+.subjek4 button{
+    position: relative; left: 135px;
+    padding: 10px; border-radius: 5px;
+    line-height: 13px; width: 35px; bottom:20px;
+    border: none;
+}
+
+.subjek5{
+    position: relative; top: 70px; z-index: 1; left: 1060px; 
+}
+.subjek5 h3,p{
+    color: aliceblue;
+}
+.subjek5 button{
+    position: relative; left: 135px;
+    padding: 10px; border-radius: 5px;
+    line-height: 13px; width: 35px; bottom:20px;
+    border: none;
+}
+.in button:hover{
+    background:transparent;
+    transition: background 0.3s ease-in-out; 
+    border: 3px solid green;
+    padding: 10px; border-radius: 2px;
+    line-height: 13px; width: 35px;
+}
+
+
+.bag2{
+    color: #1e272e; padding-top: 40px; 
+    margin-top: 170px; margin-left: 500px; width: 300px;
+    
+}
+.bag2 h4{
+    font-size: 40px; text-align: center; margin-top: 80px;
+    box-shadow: -6px -5px 4px rgba(5, 4, 3, 0.6);
+    border: 0px dashed bisque; font-size: 40px;
+}
+.bag2 p{
+    font-size: 30px; text-align: center; padding-top: 15px;
+    margin-bottom: 30px; margin-top: 10px; color: bisque;
+}
+.paginationimg img{
+    width: 200px; margin-left: 10px; margin-top: -170px; 
+    border-radius: 10px; height: 230px; padding-left: 35px;
+    filter: brightness(65%); position: relative; bottom: 160px;
+}
+.pagination{
+    width: 500px; margin-left: 600px; 
+    margin-top: -70px; font-size: 10px;  
+}
+
+.pagination a{
+    text-decoration: none; padding: auto; margin-left: 20px; 
+    background: white; border-radius: 100%; 
+}
+.pagination a:hover{
+    background: #218c74; border-radius: 50%;
+}
+
+.pagination a span{
+    padding: 5px 10px;
+    background: white;
+    border-radius: 50%; 
+}
+.pagination span:hover:not(.active){
+    background: #218c74; border-radius: 50%;
+}
+.pagination span.active{
+    background: green; border-radius: 100%; padding:auto;
+}
+
+/*Bagian About Membership*/
+.paket{
+    background:coral; width: 100%; height: 900px;
+    position: absolute; 
+}
+.bulatan1{
+    background: coral; position: relative; top: 70px;
+    width: 100px; height: 100px; border-radius: 50px;
+    border: 3px solid bisque; left: 150px;
+}
+.bulatan1 p{
+    color: brown; position: relative; top: 20px; left: 35px;
+    font-size: 50px; 
+}
+.bulatan2{
+    background: coral; position: relative; top: -35px;
+    width: 100px; height: 100px; border-radius: 50px;
+    border: 3px solid bisque; left: 580px;
+}
+.bulatan2 p{
+    color: brown; position: relative; top: 20px; left: 35px;
+    font-size: 50px; 
+}
+.bulatan3{
+    background: coral; position: relative; top: -143px;
+    width: 100px; height: 100px; border-radius: 50px;
+    border: 3px solid bisque; left: 1010px;
+}
+.bulatan3 p{
+    color: brown; position: relative; top: 20px; left: 35px;
+    font-size: 50px; 
+}
+.tpaket p{
+   text-align: center; margin-top: 60px; font-size: 20px;
+}
+.tpaket h2{
+    text-align: center; margin-top: 20px; color:bisque;
+    box-shadow: -6px -5px 4px rgba(0,0,0,0.4);
+    border: 0px dashed bisque; font-size: 40px;
+    margin-bottom: 40px;
+}
+.goldsilvbronz{
+   width: 360px; height: 490px; background: bisque;
+   margin: 30px; border-radius: 12%; float: left;
+   box-shadow: -3px -3px 2px rgba(0,0,0,0.4);
+   border: 2px dashed bisque; margin-top: -200px;
+
+}
+.goldsilvbronz img{
+    width: 360px; border-radius: 15%; 
+}
+.goldsilvbronz h2{
+    padding: 5px; margin-top: 3px; 
+    margin-left: 5px;
+}
+.goldsilvbronz p{
+   color: brown; padding: 5px; margin-top: 3px; 
+   margin-left: 5px;
+}
+.goldsilvbronz h4{
+    padding: 5px; margin-top:-6px; text-align: justify;
+    margin-left: 5px;
+}
+.goldsilvbronz button{
+    padding: 10px; margin-top: 8px; width: 148px; 
+    line-height: 40px; text-align: center;
+    border: 0px; background: white;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    margin-right: -5px; margin-left:20px;
+    border-radius: 15px;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+}
+.goldsilvbronz button[type=button]:hover{
+    color:#05c46b; background: blanchedalmond;
+    transition: background 0.2s ease-in-out; 
+}
+
+/*Bagian Our Services*/
+.services{
+    background: #1e272e; position:relative;
+    top: 900px; height: 1100px; 
+}
+.ser_atas{
+    border-bottom: 5px solid green; height: 620px;
+} 
+.ser_atas p{
+    color: #05c46b; text-align: center; position: relative;
+    top:50px
+}
+.ser_atas h2{
+    color: antiquewhite; text-align: center;
+    position: relative; top:65px;
+}
+.kiriser{
+  border: 2px solid green; margin-top: 130px; width: 300px;
+  height: 350px; border-radius: 10%; float: left; 
+  margin-left: 90px; 
+}
+.kiriser img{
+    width: 170px; margin-left: 55px; margin-top: 40px;
+    align-items: center;
+}
+.kiriser h1{
+    color:#05c46b; font-size: medium; margin-top: 15px;
+    text-align: center; margin-left: 50px;
+}
+.kiriser h5{
+    color: bisque; margin-top: 13px; text-align: center;
+}
+.tengahser{
+    border: 2px solid green; margin-top: 130px; width: 300px;
+    height: 350px; border-radius: 10%; float: left;
+    margin-left: 90px; 
+}
+.tengahser img{
+    width: 170px; margin-left: 60px; margin-top: 40px;
+    
+}
+.tengahser h1{
+    color:#05c46b; font-size: medium; margin-top: 15px;
+    text-align: center; margin-left: 50px;
+}
+.tengahser h5{
+    color: bisque; margin-top: 13px; text-align: center;
+}
+.kananser{
+    border: 2px solid green; margin-top: 130px; width: 300px;
+    height: 350px; border-radius: 10%; float: left;
+    margin-left: 90px; 
+}
+.kananser img{
+    width: 170px; margin-left: 50px; margin-top: 40px;
+}
+.kananser h1{
+    color:#05c46b; font-size: medium; margin-top: 15px;
+    text-align: center; margin-left: 100px;
+}
+.kananser h5{
+    color: bisque; margin-top: 13px; text-align: center;
+}
+
+/*Bagian About Us*/
+.ser_bawah{
+    overflow: hidden; display: inline;
+}
+.ser_b_kiri{
+    width:450px; margin-left: 150px; margin-top: 95px;
+}
+.ser_b_kiri h2{
+    color: #05c46b; 
+}
+.ser_b_kiri p{
+    font-size: 20px; color: bisque; margin-top: 20px;
+    text-align: left;
+}
+.ser_b_kiri button{
+    font-size: 33px; margin-top: 25px; border-radius: 10px;
+    border: 2px solid #05c46b; padding: 10px; background: bisque;
+    color:#218c74;
+}
+.ser_b_kiri button:hover{
+    background:transparent;
+    transition: background 0.8s ease-in-out;
+}
+.ser_b_kanan{
+    margin-top: -270px; width: 300px; 
+    margin-left: 700px;
+}
+
+.formskanan li {
+   position: relative; left: 20px; bottom: 30px; list-style: none;
+   margin-top: -18px; 
+}
+.formskanan li a {
+    border: 1px solid green; border-radius: 2%;
+}
+.formskanan a {
+    width: 100%; font-size: 20px; color: #05c46b;
+    display: block;cursor: pointer;
+    font-weight: 600; padding: 20px;
+}
+.formskanan p{
+    display: none; padding: 20px; background:green;
+    font-size: 14px; width: 303px;
+}
+.formskanan input{
+    position: relative; left: 310px; top: 40px;
+}
+.formskanan input:checked + P{
+    display: block;
+}
+.formskanan li:hover p{
+    display: block;
+}
+.formskanan li:hover input:checked{
+    display: block;
+}
+
+
+ 
+
+
+
+/*Bagian Video Presentation*/
+.vid video{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top:800px;
+    filter: brightness(30%);
+}
+.vid p{
+    color:bisque; font-size: large; 
+    position: relative; top:1205px; left: 600px;
+     z-index: 1; margin-bottom: 30px;
+}
+.vid h2 {
+    color:bisque; font-size: 35px; 
+    position: relative; top:1200px; left: 465px;
+     z-index: 1; 
+}
+.vid a{
+    color:bisque; font-size: 35px; 
+    position: relative; top:1200px; left: 625px;
+    z-index: 1; 
+}
+
+/*Bagian Music News*/
+.News{
+    position: relative; top: 790px; 
+    background: #218c74; width: 100%; height: 850px;
+}
+.News h5{
+    color:white; text-align: center; position: relative;
+    top: 60px; font-size: 20px;
+}
+.News h2{
+    color:gold; text-align: center; position: relative;
+    top: 75px; font-size: 50px; box-shadow: -6px -5px 4px rgba(0,0,0,0.4);
+}
+.n1{
+    width: 375px; border: 5px solid wheat; height: 520px;
+    margin-top: 130px; margin-left: 30px; float: left;
+}
+.n1atas{
+    background: black; height: 200px;
+    margin-top: -15px;
+}
+.n1 h4{
+    color:white; margin-top: 15px; font-size: small;
+    margin-left: 5px; padding-top: 10px; text-align: center;
+}
+.News img{
+    width: 375px; margin-top: -15px; 
+}
+.n1bawah{
+    margin-top:-130px; background: #ddd; height: 450px;
+    text-align: center; 
+}
+.n1bawah p{
+    color: #1e272e;
+}
+.n1 button{
+    padding: 15px; margin-top: 15px;
+}
+.n2{
+    width: 375px; border: 5px solid wheat; height: 520px;
+    margin-top: 130px; margin-left: 30px; float: left;
+}
+.n2atas{
+    background: black; height: 200px;
+    margin-top: -15px;
+}
+.n2 h4{
+    color:white; margin-top: 15px; font-size: small;
+    margin-left: 5px; padding-top: 10px; text-align: center;
+}
+.n2 img{
+    width: 375px; margin-top: -15px; height: 250px;
+    margin-bottom: 18px;
+}
+.n2bawah{
+    margin-top:-130px; background: #ddd; height: 450px;
+    text-align: center;
+}
+.n2bawah p{
+    color: #1e272e;
+}
+.n2 button{
+    padding: 15px; margin-top: 15px;
+}
+
+.n3{
+    width: 375px; border: 5px solid wheat; height: 520px;
+    margin-top: 130px; margin-left: 30px; float: left;
+}
+.n3atas{
+    background: black; height: 200px;
+    margin-top: -15px;
+}
+.n3 h4{
+    color:white; margin-top: 15px; font-size: small;
+    margin-left: 5px; padding-top: 10px; text-align: center;
+    padding-top: 20px;
+}
+.n3bawah{
+    margin-top:-130px; background: #ddd; height: 450px;
+    text-align: center;
+}
+.n3bawah p{
+    color: #1e272e;
+}
+.n3 button{
+    padding: 15px; margin-top: 15px;
+}
+
+/*Bagian Maps*/
+iframe{
+    position: relative; top: 790px;
+    width: 100%;
+}
+/*Bagian Contact Us*/
+.contactus{
+    position: relative; top: 885px; width: 100%; height: 300px;
+    border-bottom: 2px solid green;
+}
+.contactus p{
+    color: #05c46b; font-size: 20px; text-align: center;
+    margin-bottom: 15px;
+}
+.contactus h1{
+    color: #218c74; text-align: center; margin-bottom: 15px;
+    position: relative; left: 400px;
+}
+.contactus button{
+    padding: 15px; position: relative; left: 75px; top: 60px;
+    font-size: 15px; padding-left: 20px; padding-right: 20px;
+    background:#218c74; border: 0px; border-radius: 10px;
+    color: aliceblue; text-decoration: none;
+}
+.contactus button a{
+    color: aliceblue; text-decoration: none;
+}
+.contactus button:hover{
+    background:transparent;
+    transition: background 0.8s ease-in-out;
+    border: 2px solid green;
+    border-radius: 10px;
+}
+.contactus button:hover a{
+    color: green;
+}
+
+/*Bagian akhir-Footer 3 kolom*/
+.akhir{
+    position: relative; top:950px; left: 50px; 
+}
+.a_kiri{
+    width: 450px;
+}
+.a_kiri img,h1{
+    display: inline;
+}
+.a_kiri img{
+    width: 150px; border-radius: 55px;
+}
+.a_kiri h1{
+    position: relative; bottom: 60px; left: 20px;
+    box-shadow: 3px 2px 3px 2px rgba(0,0,0,0.8);
+    padding: 10px;
+}
+.a_kiri p{
+    margin-left: 10px; color: #1e272e;
+}
+.a_kiri a{
+    position: sticky
+}
+.imgakhir{
+    width: 150px; display: inline;
+}
+.imgakhir img{
+    width: 70px; position: relative; 
+}
+.imgakhir img:hover{
+    background: black; border-radius: 10px;
+}
+.a_tengah{
+    position: relative; bottom: 300px; left: 510px; 
+    
+}
+.a_tengah ul{
+    margin-top: 20px; padding: 10px;
+}
+.a_tengah li{
+    padding: 5px; 
+}
+.a_tengah a{
+    text-decoration: none; color: black;
+}
+.a_tengah li:hover{
+    color:green;
+}
+.a_tengah a:hover{
+    color:green;
+}
+.tengah2 li:hover{
+    color:green;
+}
+.tengah2{
+    display: inline; position: relative; left: 170px;
+    bottom:230px;
+}
+.a_kanan{
+    position: relative; bottom: 700px; left: 860px;
+    width: 330px;
+}
+.a_kanan p{
+    margin-top: 25px; color: #1e272e;
+}
+.jenis{
+    float: left; 
+}
+.isix{
+    float: right; position: relative; 
+    left: -50px;
+}
+
+/*Bagian Footer Bawah*/
+footer{
+    position: relative; top: 770px; font-size: 30px;
+    background: #05c46b; padding: 35px; text-align: center;
+    opacity: 45%; width: 100% color: bisque; height: 200px;
+}
+footer a{
+    text-decoration: none; color:green; margin-left: 10px; 
+}
+
+/*Bagian kuis*/
+.kuis1{
+    width: 500px; height: 500px; position: relative;
+    top: 250px;
+}
+.ataskuz {
+    
+   
+}
+.ataskuz p {
+    position: absolute; top: 400px; left: 400px;
+    width: 500px; height: auto;  font-size: 30px; color: #1e272e;
+    border-bottom: 5px solid green; padding-bottom: 30px;
+    text-align: center;
+}
+.isikuz{
+    position: absolute; top: 500px; left: 400px;
+    width: 500px; text-align: center;
+    
+}
+.isikuz p{
+    color: black;
+}
+
+.formkuz{
+    position: relative; top: 500px; left: 250px;
+     width: 1000px;
+}
+.formkuz input{
+    padding:15px; width: 150px; margin-left: 20px;
+    line-height: 10px; text-align: left;
+    border: 2px solid green; 
+}
+.formkuz select, option{
+    padding:15px;  width: 170px; margin-left: 20px;
+    line-height: 70px; text-align: left; border: 2px solid green;
+}
+.formkuz button{
+    padding:10px; width: 170px; margin-top: 2px; 
+    line-height: 33px; text-align: center;
+    border: 0px; background: #05c46b; 
+    line-height: 20px; position: relative; 
+    top: 100px; right: 450px;
+}
+.formkuz button[type=button]:hover{
+    color:green; background: transparent;
+    transition: background 1s ease-in-out; 
+    border: 3px solid green;
+}
+
+.allbutt{
+    position: absolute; top: 250px;
+}
+.buttbawah1{
+    position: relative; top: 650px; left: 280px;
+    width: 800px;
+}
+.buttbawah1 button{
+    padding:10px; width: 170px; padding: 20px; border-radius: 7%;
+    background: green; color: #ddd;  border: none;
+}
+
+.buttbawah2{
+    position: relative; top: 597px; left: 480px;
+    width: 800px;
+}
+.buttbawah2 button{
+    padding:10px; width: 170px; padding: 20px; border-radius: 7%;
+    background: black; color: #ddd;  border: none;
+}
+
+.buttbawah3{
+    position: relative; top: 540px; left: 680px;
+    width: 800px;
+}
+.buttbawah3 button{
+    padding:10px; width: 170px; padding: 20px; border-radius: 7%;
+    background:#218c74; color: #ddd;  border: none;
+}
+
+.buttbawah4{
+    position: relative; top: 485px; left: 880px;
+    width: 800px;
+}
+.buttbawah4 button{
+    padding:10px; width: 190px; padding: 20px; border-radius: 7%;
+    background: #218c74; color: #ddd;  border: none;
+}
